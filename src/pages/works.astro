@@ -1,0 +1,25 @@
+---
+import Menu from "../componets/Menu.astro";
+import TitlePage from "../componets/TitlePage.astro";
+import CardWorks from "../componets/CardWorks.astro";
+import Button from "../componets/Button.astro";
+---
+
+<Menu/>
+
+<section class="bg-gray-200 py-20 px-8">
+    <div class="max-w-6xl mx-auto">
+        <TitlePage title="Works" subtitle="Some of my projects"/>
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+            <CardWorks title="Project 1" image="../../public/images/code-820275_1920.jpg" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."> 
+                <Button title="View More"/>
+            </CardWorks> 
+            <CardWorks title="Project 2" image="../../public/images/code-820275_1920.jpg" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."> 
+                <Button title="View More"/>
+            </CardWorks> 
+            <CardWorks title="Project 3" image="../../public/images/code-820275_1920.jpg" description="Lorem ipsum dolor sit amet consectetur adipisicing elit."> 
+                <Button title="View More"/>
+            </CardWorks> 
+        </div>
+    </div>
+</section>
